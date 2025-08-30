@@ -24,33 +24,26 @@ This app allows users to:
 
 ## Project Structure
 
-```
-lib/
-   main.dart                # App entry point, sets up theme and home page
-   core/
-      constants/app_constants.dart   # App-wide constants (e.g., app title, precision)
-      utils/conversion_utils.dart    # Utility functions for conversions
-   data/units_data.dart     # Defines available units and categories
-   models/
-      measure_category.dart  # Enum for measure categories (Length, Weight, etc.)
-      unit.dart              # Data model for a unit (name, conversion factor, etc.)
-   pages/measure_converter_screen.dart # Main UI and logic for conversion
-   services/measure_conversion_service.dart # Handles validation and conversion logic
-   theme/
-      app_colors.dart        # App color definitions
-      app_theme.dart         # App theming
-   widgets/                 # Reusable UI components
-      measure_category_selector.dart # Dropdown for category selection
-      unit_dropdown.dart     # Dropdown for unit selection
-      value_input.dart       # Input field for value
-      result_card.dart       # Displays conversion result
-test/
-   conversion_service_test.dart     # Unit tests for conversion logic
-screenshots/
-   length_conversion.png           # Screenshot: Length conversion
-   weight_conversion.png           # Screenshot: Weight conversion
-   temperature_conversion.png      # Screenshot: Temperature conversion
-```
+| Path/Folder                                    | Purpose/Description                                   |
+| ---------------------------------------------- | ----------------------------------------------------- |
+| `lib/main.dart`                                | App entry point, sets up theme and home page          |
+| `lib/core/constants/app_constants.dart`        | App-wide constants (e.g., app title, precision)       |
+| `lib/core/utils/conversion_utils.dart`         | Utility functions for conversions                     |
+| `lib/data/units_data.dart`                     | Defines available units and categories                |
+| `lib/models/measure_category.dart`             | Enum for measure categories (Length, Weight, etc.)    |
+| `lib/models/unit.dart`                         | Data model for a unit (name, conversion factor, etc.) |
+| `lib/pages/measure_converter_screen.dart`      | Main UI and logic for conversion                      |
+| `lib/services/measure_conversion_service.dart` | Handles validation and conversion logic               |
+| `lib/theme/app_colors.dart`                    | App color definitions                                 |
+| `lib/theme/app_theme.dart`                     | App theming                                           |
+| `lib/widgets/measure_category_selector.dart`   | Dropdown for category selection                       |
+| `lib/widgets/unit_dropdown.dart`               | Dropdown for unit selection                           |
+| `lib/widgets/value_input.dart`                 | Input field for value                                 |
+| `lib/widgets/result_card.dart`                 | Displays conversion result                            |
+| `test/conversion_service_test.dart`            | Unit tests for conversion logic                       |
+| `screenshots/length_conversion.png`            | Screenshot: Length conversion                         |
+| `screenshots/weight_conversion.png`            | Screenshot: Weight conversion                         |
+| `screenshots/temperature_conversion.png`       | Screenshot: Temperature conversion                    |
 
 ## Quick Start
 
@@ -63,7 +56,7 @@ screenshots/
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/mscs533_a01_flutter_unit_converter.git
+   git clone https://github.com/aashishshrestha09/mscs533_a01_flutter_unit_converter.git
    cd mscs533_a01_flutter_unit_converter
    ```
 2. Install dependencies:
